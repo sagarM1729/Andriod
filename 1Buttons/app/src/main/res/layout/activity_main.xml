@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Corner Buttons -->
+    <Button
+        android:id="@+id/buttonTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBottomRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Center Buttons - Horizontal Layout -->
+    <LinearLayout
+        android:id="@+id/centerButtonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCenter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="button 3" />
+
+        <Button
+            android:id="@+id/buttonCenter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 4"/>
+
+        <Button
+            android:id="@+id/buttonCenter3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="button 5"/>
+    </LinearLayout>
+
+</RelativeLayout>
